@@ -314,6 +314,7 @@
 	     }
 	   }
 	   if (paused) {
+	     usleep(1000);
 	     continue;
 	   }
 	   value = gpiod_line_get_value(line);
